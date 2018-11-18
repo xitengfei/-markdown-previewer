@@ -14,7 +14,6 @@
     }
     .editor {
         flex: 0 0 50%;
-        overflow: hidden;
         padding-right: 36px;
         box-sizing: border-box;
         p{
@@ -41,6 +40,9 @@
     }
     .view {
         text-align: left;
+        overflow: scroll;
+        max-height: 220vh;
+
         &:before {
             content: "Select All";
             color: #666;
@@ -52,8 +54,8 @@
         }
     }
     .paper {
+        width:50%;
         flex:0 0 50%;
-        overflow: hidden;
         box-sizing: border-box;
         background: #fff;
         padding: 30px;
